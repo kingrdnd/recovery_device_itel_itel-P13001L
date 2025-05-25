@@ -42,7 +42,7 @@ fetch_mt6789_common_trustkernel_repo() {
 	local common=device/transsion/mt6789-common-trustkernel
 	if [ ! -d $common ]; then
 		echo "Cloning $URL ... to $common"
-		git clone $URL -b fox_12.1-tranos15 $common
+		git clone $URL -b main $common
 	else
 		echo "Device common repository: \"$common\" found ..."
 	fi
